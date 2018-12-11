@@ -16,4 +16,4 @@ USER       nobody
 EXPOSE     9090
 VOLUME     [ "/prometheus" ]
 WORKDIR    /etc/prometheus
-ENTRYPOINT [ "/bin/prometheus" ]
+ENTRYPOINT [ "/bin/prometheus" "--web.enable-admin-api"]
